@@ -10,6 +10,8 @@ public interface UserService {
 	void delete(User user);
 	void update(User user);
 	void addUserExternally(User user);
-	boolean login(User user);
+	void login(String email, String password);
 	List<User> getAll();
+	User getById(int userId);
+	User getByEmail(String email);
 }

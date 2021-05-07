@@ -10,5 +10,6 @@ public interface UserDao {
 	void update(User user);
 	void delete(User user);
 	User getById(int userId);
+	User getByEmail(String email);
 	List<User> getAll();
 }

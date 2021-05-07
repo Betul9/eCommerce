@@ -13,12 +13,12 @@ public class main {
 		UserService userService = new UserManager(new HibernateUserDao(), 
 				new GoogleAuthManagerAdapter());
 		
-		User user = new User(1, "Betül", "Sarý", "betul@betul.com", "12345");
-		User userNotExist = new User(5, "abc", "abc", "abc@abc.com", "5641");
+		User user = new User(1, "Betul", "Sarý", "betul@betul.com", "123456");
+		User user2 = new User(5, "abc", "abc", "abc@abc.com", "5641");
 		
 		userService.addUserExternally(user);
 		
-		userService.login(userNotExist);
+		userService.login(user2.getEmail(), user2.getPassword());
 	}
 
 }

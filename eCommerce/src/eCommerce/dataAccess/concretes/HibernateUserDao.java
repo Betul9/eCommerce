@@ -41,15 +41,24 @@ public class HibernateUserDao implements UserDao{
 
 	@Override
 	public User getById(int userId) {
-		User userToGet = null;
-		for (User u : users) {
+		for(User u : users) {
 			if(u.getUserId() == userId)
-				userToGet = u;
+				return u;
 		}
-		
-		return userToGet;
+		return null;
 	}
 
+	@Override
+	public User getByEmail(String email) {
+		for(User u : users){
+			if(u.getEmail()== email) {
+				return u;
+			}
+		}
+		return null;
+	}
+
+	
 	@Override
 	public List<User> getAll() {
 		return users;

@@ -1,4 +1,4 @@
-package eCommerce.GoogleAuthentication;
+package eCommerce.googleAuthentication;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,8 +9,8 @@ import eCommerce.entities.concretes.User;
 public class GoogleAuthManager {
 	
 	//to simulate the list of google accounts
-	User u1 = new User(1, "Feyza", "Sarý", "feyza@feyza.com", "12345");
-	User u2 = new User(2, "Betül", "Sarý", "betul@betul.com", "12345");
+	User u1 = new User(5, "Feyza", "Sarý", "feyza@feyza.com", "12345");
+	User u2 = new User(1, "Betül", "Sarý", "betul@betul.com", "12345");
 	
 	List<User> googleAccounts = new ArrayList<User>(Arrays.asList(u1,u2));
 	

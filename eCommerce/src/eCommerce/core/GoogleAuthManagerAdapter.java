@@ -1,7 +1,7 @@
 package eCommerce.core;
 
-import eCommerce.GoogleAuthentication.GoogleAuthManager;
 import eCommerce.entities.concretes.User;
+import eCommerce.googleAuthentication.GoogleAuthManager;
 
 public class GoogleAuthManagerAdapter implements AuthService{
 	
